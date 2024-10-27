@@ -1,0 +1,54 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styles for the nav container */
+  .home-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .home-ll {
+    text-align: left; /* Align text to the left */
+    margin-right: 20px; /* Add some space between nav items */
+    transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+  }
+  
+  .home-ll h1 {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .home-ll:hover {
+    transform: scale(1.1); /* Scale up the element slightly */
+  }
+  
+  .home-ll h1:hover {
+    color: #9b9ca0; /* Highlight color on hover */
+  }
+  
+  /* Make it responsive for smaller screens */
+  @media (max-width: 768px) {
+    .home-ul {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left on small screens */
+    }
+  
+    .home-ll {
+      margin-bottom: 15px;
+    }
+  }
+  
